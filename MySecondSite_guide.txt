@@ -1,0 +1,58 @@
+Used materials:
+https://www.youtube.com/watch?v=n9kx5Vk0jgc&list=PL3LQJkGQtzc5G7wIQfVqBMEprmTKZIaXf&index=1
+Comment:All information without structure despite nummering of videos and also so bad examples for own-coding because I don't understand for what this site is and what happening on
+this site
+
+
+MySecondSite_guide
+
+Description:
+Sublime merge - https://drive.google.com/drive/folders/1I2K0yxAqubKg4CHagFafaCtQBdA6luHQ?usp=share_link
+
+Make structure like video5 we learn coala video6 we learn pseudo and make another way where we will white site like MyFirstSite MySecondSite etc where I writing
+all site and explain all moments (now I see it like I explain all that I used to write this site e.g coala tags and fonts and than I make other videos with explain)
+video_explain_1
+video_explain_2
+MyFirstSite
+video_explain_3
+...
+MySecondSite
+...
+
+To every video I add code on gitHub and Codepen (template and complete version)
+Where it possible I add snippets (also at the end show how to install snippet)
+
+(in all videos below say about snippet def cause it more quickly than use template)
+Explain how I write video8 site
+Explain my own video "short figma introduction"
+(say about how to apply 12 columns in figma you just width (for expmple 1920) -25% (1440) and than 1440/12 (120) gutter 10) 1920 - 120 - 1440 - 90
+(say how you can download image from figma 
+Explain video9-10_bootstrap 
+Explain video11_coala (say you go to figma and make default settings in your .less file like you write all text styles icon colors etc and about MySiteTemplate)
+(say that Autoprefix needed for all browser support)
+Explain my own video about code structure (say about gap 20 about code minimize and about classes names and say that structirable and cleary code comes with time)
+(and if you will practice a lot you code will be cleaner and cleaner and try do don't use comments you code should be understandable without comments - just)
+(give class names understandable for all feature developers that will be read your code or for you on next day cause you can sit and see your code that you wrote)
+(yesterday and say like what is that? I don't say that you don't need comments at all but please don't comment every line of section just write your comment in)
+(the name of class of variable - now you can see how I use comments https://prnt.sc/y4_5X8WJEu2B https://prnt.sc/3rFi-t18ppab https://prnt.sc/DEkEkynKZ-BJ)
+Explain video12_snippet (say about that for .html is text.html for .css and .js is source.css or source.js and say about snippets in figma)
+(say if snippets not work press tab for some space)
+Explain code sharing  (say about githubgist and codepen and about Sublime Merge (explain comit what is that) and show for VS code)
+Explain video16_fonts
+Explain video18_pseudo (say about button button-learnMore like explain about _ - specificName)
+Explain video20_sliders
+Explain video21_pop-up_windows (with <a> tag and with <button> tag and give snippet)
+Explain video28_video_background (say where you can get video background)
+Explain video30_parallax
+Explain video32_maps
+
+
+Show How I made sites MySite
+video15_spaklevka_1 etc
+say where you can take icons (boxicons the best site but not ideal cause I need click to choose I and it not automatically close)
+
+
+Fimga materials:
+video8 - https://www.figma.com/file/8U5uxXBpUDZAIJReaLpdbd/video8?node-id=142%3A2&t=4qcO0lVxtft4ZRkP-1
+video15 - https://www.figma.com/file/mwh215v48xuwkpw5rEvYkS/video15?node-id=178%3A2&t=UyfYMDKVwuwkcj5a-0
+snippets - https://www.figma.com/file/wCoQfc1zv6HnIdZRDs1SeK/snippets?node-id=0%3A1&t=Nwo44gisCFujvNhQ-1

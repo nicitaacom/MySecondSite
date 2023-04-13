@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Neris';
+    src: url('../fonts/Neris-Thin.eot');
+    src: url('../fonts/Neris-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Neris-Thin.woff2') format('woff2'),
+        url('../fonts/Neris-Thin.woff') format('woff'),
+        url('../fonts/Neris-Thin.ttf') format('truetype'),
+        url('../fonts/Neris-Thin.svg#Neris-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+	background-color: #202020;
+	font-family: 'Neris', sans-serif;
+}

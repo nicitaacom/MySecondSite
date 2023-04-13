@@ -1,0 +1,94 @@
+@import url('main.css');
+body {
+	background-color: #404040;
+}
+
+h1 {
+	color:white;
+	text-transform: lowercase;
+	border:2px solid #000;
+}
+
+a {
+	background-color: #ffa;
+	display: inline-block;
+	width: 200px;
+}
+
+
+span {
+	background-color: #f00;
+	display: inline-block;
+}
+
+.text {
+	color:#CD777a;
+}
+
+#text-1 {
+	color:blue;
+}
+
+.header {
+	text-transform: uppercase;
+}
+
+.block {
+	color:red;
+	text-align: center;
+}
+
+.box1 {
+	background-color: #aeaeae;
+	height: 400px;
+	color:white;
+	overflow: scroll;
+	border:2px solid black;
+	display: inline-block;
+	width: 30%;
+	margin-top: 100px;
+	float:left;
+}
+
+.box2 {
+	background-color: #aeaeae;
+	height: 100px;
+	width: 200px;
+	display: inline-block;
+}
+
+.box3 {
+	position: absolute;
+	height: 300px;
+	width: 300px;
+	background-color: violet;
+	left: 30%;
+	margin-left: -150px;
+	top: 0;
+	z-index: 1;
+}
+
+.box4 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: absolute;
+	left: 30%;
+	margin-left: -160px;
+	top:0;
+	z-index: 0;
+}
+
+.mini_box {
+	top:0;
+	left: 0;
+	width: 50%;
+	height: 50px;
+	background-color: red;
+}
+
+.video {
+	color:red;
+	font-size: 56px;
+}

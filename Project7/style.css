@@ -1,0 +1,35 @@
+/*
+
+Last lesson #5
+https://www.youtube.com/watch?v=kc0ScJvmtd8&list=PL3LQJkGQtzc5G7wIQfVqBMEprmTKZIaXf&index=6
+
+*/
+
+header {
+	height: 100px;
+	background-color: #505050;
+	display: block;
+	justify-content: center;
+	text-align: center;
+}
+
+#header-1 {
+justify-content: center;
+width: 100px;
+height: 20px;
+}
+
+body {
+	margin:0;
+	background-color:#191919;
+	color: white;
+	padding-left: 5%;
+	padding-right: 5%;
+
+}
+
+#hrefYandex {
+	background-color: red;
+	width:200px;
+	display: inline-block;
+}

@@ -1,0 +1,17 @@
+body {
+	background-color: #202020;
+}
+
+/*color for .svg https://codepen.io/sosuke/pen/Pjoqqp*/
+.icons img {
+	width:40%;
+	height:40%;
+}
+
+.icon1 img { 
+	filter: invert(46%) sepia(89%) saturate(1515%) hue-rotate(87deg) brightness(122%) contrast(121%);
+}
+
+.icon2 img {
+	filter: invert(21%) sepia(45%) saturate(7430%) hue-rotate(353deg) brightness(90%) contrast(129%);
+}

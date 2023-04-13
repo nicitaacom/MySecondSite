@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pop-up windows</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+	<script defer src="script.js"></script>
+
+</head>
+
+
+
+
+<body>
+
+	<section class="smaple_1">
+		<body>
+			<!-- Bootstrap - not working -->
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+				Launch demo modal
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+						</div>
+						<div class="modal-body">
+							...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</body>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+	<section class="sample_2">
+		<!-- Not working Tutorial https://www.youtube.com/watch?v=AF6vGYIyV8M not working -->
+		<body>
+			<div class="container">
+
+				<button class="btn btn-success" type="submit" onclick="openPopup()">Submit</button>
+				<div class="pop-up" id="pop-up">
+					<img src="img/1_in_red_circle.svg" alt="">
+					<h2>Thank you</h2>
+					<p>Your details...</p>
+					<button type="button" onclick="closePopup()">OK</button>
+				</div>
+
+				<script>
+					let pop-up = document.getElementById("pop-up");
+
+					function openPopup() {
+						pop-up.classList.add("open-pop-up")
+					}
+
+
+					function closePopup() {
+						pop-up.classList.remove("open-pop-up")
+					}
+				</script>
+			</div>
+		</body>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<section class="sample_3" id="#sample_3">
+		<!-- Working but with <a> tag Tutorial youtube.com/watch?v=czNhJc79LZM -->
+			<body>
+				<h1>My CSS pop-up</h1>
+				<a class="btn btn-success" href="#pop-up1">
+					<p>Open pop-up 1</p>
+				</a>
+
+				<div class="pop-up" id="pop-up1">
+					<div class="pop-up_window">
+						<h3>Popup 1</h3>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error veniam doloremque quisquam numquam laboriosam debitis blanditiis commodi ad molestias voluptate, perferendis obcaecati, assumenda sint dolores ratione officiis provident accusantium reprehenderit.</p>
+						<a class="btn btn-danger" href="#sample_3">Close</a>
+					</div>
+				</div>
+			</body>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<section class="sample_4">
+			<!-- not working https://www.youtube.com/watch?v=TAB_v6yBXIE -->
+			<body>
+				<h1>Modals the <em>easy</em> way</h1>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit alias dicta quibusdam cumque ipsa ipsum reiciendis animi, officia provident veniam quis delectus minima earum suscipit ea, beatae vitae ipsam nemo.</p>
+				<p>Alias, architecto sapiente nostrum id, sed explicabo numquam aspernatur ratione qui excepturi repellat porro culpa molestiae? Culpa dolorem commodi cupiditate, eos deleniti similique repellendus nam velit natus a soluta et.</p>
+				<p>Fugiat ratione impedit officiis? Eligendi sapiente culpa tenetur esse quo reiciendis illum vero nisi ullam consequatur illo molestiae, nihil eaque. Esse asperiores tenetur natus! Quo asperiores molestias sed assumenda alias.</p>
+				<p>Sequi quo animi, nostrum laboriosam veritatis consequatur. Eos cumque unde porro explicabo provident, possimus alias magni pariatur quis consequuntur voluptatum? Debitis necessitatibus facilis fugiat repudiandae nobis neque nam, vel odio?</p>
+				<button class="button open-button">open modal don't click - bug</button>
+
+				<dialog class="modal" id="modal">
+					<h2>An interesting title</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse nisi, laboriosam illum temporibus ipsam?</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quo.</p>
+					<button class="button close-button">close modal</button>
+					<form class="form" method="dialog">
+						<label>Your name <input type="text"></label>
+						<label>Your email <input type="email"></label>
+						<button class="button" type="submit">submit form</button>
+					</form>
+
+				</dialog>
+
+<!--   
+  <form class="form" method="dialog">
+    <label>Your name <input type="text"></label>
+    <label>Your email <input type="email"></label>
+    <button class="button" type="submit">submit form</button>
+</form>-->
+<script>
+	const modal = document.querySelector("#modal");
+	const openModal = document.querySelector(".open-button");
+	const closeModal = document.querySelector(".close-button");
+
+	openModal.addEventListener("click", () => {
+		modal.showModal();
+	});
+
+	closeModal.addEventListener("click", () => {
+		modal.close();
+	});
+
+</script>
+</body>	
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="sample_5">
+	<!-- Not working https://www.youtube.com/watch?v=MBaw_6cPmAw -->
+	<body>
+		<button data-modal-target="#modal">Open Modal</button>
+		<div class="modal" id="modal">
+			<div class="modal-header">
+				<div class="title">Example Modal</div>
+				<button data-close-button class="close-button">&times;</button>
+			</div>
+			<div class="modal-body">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
+			</div>
+		</div>
+		<div id="overlay"></div>
+	</body>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="sample_6">
+	<body>
+		<!-- Working only in Temp where ctrl+c ctrl+v (here the same but in section) https://www.youtube.com/watch?v=KX0NR5HtQ1Q -->
+		<section id="hero">
+			<div class="container">
+				<nav>
+					<h1>Sugar and Spice</h1>
+					<ul>
+						<li>Home</li>
+						<li>About</li>
+						<li>Contact</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="content">
+				<p>We make good food</p>
+				<button id="show-modal">Learn More</button>
+			</div>
+		</section>
+
+		<div class="overlay overlay--hidden"></div>
+		<div class="modal modal--hidden">
+			<div class="modal__contents">
+				<div class="modal__close-bar">
+					<span>X</span>
+				</div>
+				<p>Please enter your email address to find out more</p>
+				<form id="learn-more-form">
+
+					<input type="email" placeholder="Your Best Email">
+					<button id="submit">Submit</button>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</section>
+</body>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="sample_7">
+	<body>
+		<!-- Working but without bootstrap only https://www.youtube.com/watch?v=MBaw_6cPmAw -->
+		<button data-modal-target="#modal">Open Modal</button>
+		<div class="modal" id="modal">
+			<div class="modal-header">
+				<div class="title">Example Modal</div>
+				<button data-close-button class="close-button">&times;</button>
+			</div>
+			<div class="modal-body">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
+			</div>
+		</div>
+		<div id="overlay"></div>
+	</body>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="sample_8">
+	<!-- In sterile conditions works witn <button> tag and with bootstrap https://www.youtube.com/watch?v=6ophW7Ask_0 -->
+		<body>
+
+
+			<button id="open-pop-up1" class="button">Open pop-up</button>
+
+			
+
+
+			<div id="pop-up1" class="pop-up1">
+				<div class="pop-up1_content">
+					<div class="pop-up1_header">
+						<span class="popUp1Close">&times;</span>
+						<h2>Pop-up header</h2>
+					</div>
+					<div class="pop-up1_body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit atque reprehenderit, iure est earum maxime laborum assumenda vel enim aspernatur reiciendis possimus dolorum nesciunt, beatae ipsa ab harum eveniet cupiditate.</p>
+					</div>
+					<div class="pop-up1_cellar">
+						<h2>Cellar</h2>
+					</div>
+				</div>
+			</div>
+			
+
+		</body>
+
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</html>

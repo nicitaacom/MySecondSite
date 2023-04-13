@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Neris';
+  src: url('../fonts/Neris-Thin.eot');
+  src: url('../fonts/Neris-Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/Neris-Thin.woff2') format('woff2'), url('../fonts/Neris-Thin.woff') format('woff'), url('../fonts/Neris-Thin.ttf') format('truetype'), url('../fonts/Neris-Thin.svg#Neris-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+/*Colors*/
+/*Basic settings*/
+body {
+  background-color: #202020;
+}
+html {
+  font-style: 10px;
+}
+.button {
+  background-color: #fcb303;
+  font-family: 'Neris', sans-serif;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-transform: uppercase;
+  border: none;
+  font-size: 1.2rem;
+}
+/*Typography*/
+section {
+  padding: 10rem 0;
+}
+/* main */
+.main {
+  padding: 4rem 0;
+  /*subtitle*/
+  /*Green form*/
+  /*text Оплпта по факту*/
+  /*main form*/
+  /*input*/
+  /*Filed labels*/
+}
+.main-content {
+  margin-top: 10rem;
+}
+.main-content h1 {
+  /*main title*/
+  margin-bottom: 4rem;
+  font-weight: 900;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.main-subtitle {
+  margin-bottom: 4rem;
+  font-size: 2.4rem;
+}
+.main span {
+  display: inline-block;
+  padding: 3rem 5rem;
+  background-color: #46b814;
+  color: white;
+  /*300*/
+}
+.main span strong {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.main-trigger {
+  display: block;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 3rem;
+}
+.main-form {
+  padding: 4rem 5rem;
+  background-color: #202020;
+  text-align: center;
+}
+.main-header {
+  font-size: 1.8rem;
+}
+.main-header strong {
+  font-size: 2rem;
+}
+.main .header {
+  height: 7rem;
+}
+.main .wrap {
+  display: table;
+  width: 100%;
+  height: 7rem;
+}
+.main .wrap-block {
+  display: table-cell;
+  vertical-align: middle;
+}
+.main-input {
+  display: block;
+  border: 1px solid #dddddd;
+  width: 100%;
+  padding: 1.5rem;
+}
+.main label {
+  display: block;
+  background-color: #202020;
+}
+.phone-link {
+  display: inline-block;
+  color: #1a1820;
+  font-weight: 900;
+  font-size: 2rem;
+  height: 7rem;
+  line-height: 7rem;
+}

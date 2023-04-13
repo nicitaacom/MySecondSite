@@ -1,0 +1,21 @@
+body {
+	background-color:#202020;
+	color:white;
+}
+
+h1 {
+	border: 2px solid red;
+	text-transform: uppercase;
+	color: purple;
+	display:inline-block;
+}
+
+#text-1 {
+	color:blue;
+}
+
+#text-2 {
+	background-color: red;
+	display: inline-block;
+	width: 200px;
+}

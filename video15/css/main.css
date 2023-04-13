@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'Neris';
+  src: url('../fonts/Neris-Thin.eot');
+  src: url('../fonts/Neris-Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/Neris-Thin.woff2') format('woff2'), url('../fonts/Neris-Thin.woff') format('woff'), url('../fonts/Neris-Thin.ttf') format('truetype'), url('../fonts/Neris-Thin.svg#Neris-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+/*Colors*/
+/* Text */
+.subTitle-18 {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.title-30 {
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.big-32-bold {
+  font-size: 32px;
+  font-weight: 800;
+}
+.title-18-bold {
+  font-size: 18px;
+  font-weight: 800;
+}
+.button-14-bold-ttu {
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+/*Basic settings*/
+body {
+  background-color: #202020;
+  color: #000000;
+}
+/* clsss of all buttons */
+.button {
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: #fcb303;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header {
+  background-color: #606060;
+  background-image: url(../img/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  width: 100%;
+  height: 500px;
+  background-position: 100% 30%;
+}
+/* navbar */
+.navbarImage {
+  margin-top: 20px;
+  width: 307px;
+  height: 80px;
+}
+.navbarPhone {
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.navbarButton {
+  padding: 10px 5px;
+}
+/* header text*/
+.mainTitle {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 36px;
+}
+.subTitle {
+  margin-top: 20px;
+  font-weight: 600;
+}
+.price {
+  background-color: #46b814;
+  color: #ffffff;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+.oplata {
+  font-size: 20px;
+  font-weight: 900;
+}
+/*header form*/
+.form {
+  background-color: #212529;
+  padding: 20px 20px;
+  position: relative;
+}
+.form input {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.form .formTitle {
+  display: inherit;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.form .formName {
+  position: absolute;
+  background-color: #212529;
+  left: 36%;
+  top: 24%;
+  padding: 0 0.5rem;
+}
+.form .formPhone {
+  position: absolute;
+  background-color: #212529;
+  left: 7.5rem;
+  top: 9rem;
+  padding: 0 0.5rem;
+}
+.form .buttonPriceSize {
+  margin-top: 20px;
+  padding: 6% 0;
+}
+.form .formSmall {
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+}
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 200px;
+}
+.features h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 60px auto;
+}
+.features img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  -webkit-filter: invert(69%) sepia(39%) saturate(6215%) hue-rotate(64deg) brightness(99%) contrast(84%);
+          filter: invert(69%) sepia(39%) saturate(6215%) hue-rotate(64deg) brightness(99%) contrast(84%);
+  position: relative;
+}
+.features p {
+  font-size: 18px;
+  font-weight: 800;
+}
+.features small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* prices */
+.prices {
+  background-color: #2d780d;
+}
+.prices h2 {
+  color: white;
+}
+.prices h5 {
+  font-size: 18px;
+}
+.prices small {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+}
+.prices .buttonPriceCalculate {
+  padding: 15px 0px;
+  margin-left: 80px;
+  margin-top: 60px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 14px;
+}
+.leaveContactData {
+  position: relative;
+}
+.leaveContactData img {
+  position: absolute;
+  width: 300px;
+  left: 0%;
+  top: 10%;
+}
+.leaveContactData .buttonSubmit {
+  padding: 10px 20px;
+}
+.howWeWork img {
+  width: 100px;
+}
+.howWeWork p {
+  margin-bottom: 0rem;
+}

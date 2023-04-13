@@ -1,0 +1,36 @@
+body {
+  background-color: #202020;
+  color: white;
+}
+section {
+  border-bottom: 2px solid red;
+  margin: 10%;
+}
+@-webkit-keyframes move {
+  from {
+    margin-left: 0;
+  }
+  10% {
+    margin-left: 20px;
+  }
+  to {
+    margin-left: 400px;
+  }
+}
+@keyframes move {
+  from {
+    margin-left: 0;
+  }
+  10% {
+    margin-left: 20px;
+  }
+  to {
+    margin-left: 400px;
+  }
+}
+.sample_1 .box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}

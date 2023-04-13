@@ -1,0 +1,897 @@
+/* For me 
+myClass - input button
+div - main_text
+bootstrap - form-control button-lg
+rem - html fz10 (1rem=10) - html fz16 (1rem = 16) - it needs to make the same as in figma
+cause in figma can be fz10 and you write fz10 but it looks smaller so to fix that you use rem
+29.02.2023 - 09.03.2023
+*/
+
+/* For another developer
+	gap between new section 20 lines
+	*/
+
+
+	/* Global settings */
+	body {
+		background-color:@background;
+		color:white;
+		min-height:100%;
+		height:100%;
+
+	}
+	html {
+		font-size: 12px;
+	}
+
+	/* Colors */
+	@background:#202020;
+	@background-green:#027C00;
+	@text-black:#000000;
+	@text-white:#FFFFFF;
+	@icons:#03AC00;
+	@form-bg:#202020;
+	@input-bg:#202020;
+	@input-border:#FFFFFF;
+	@button:#FCB303;
+	@card-bg:#7B7B7B;
+
+	/* Custom buttons inputs forms etc*/
+	section {
+		margin-bottom: 5%;
+	}
+
+	.button {
+		background-color: @button;
+		padding: 10px 20px;
+		border-radius: 12px;
+		border:none;
+		.button-14-bold-ttu;
+		a:hover {
+			color:@text-white;
+		}
+	}
+
+	.form {
+		background-color: @form-bg;
+		padding: 6% 12%;
+		margin-bottom: 6%;
+		.formTitle {
+			color:@text-black;
+			font-size: 16px;
+			text-align:center;
+			padding-top: 5%;
+			margin-bottom: 15%;
+		}
+		.formButton {
+			.button();
+			display: inline-block;
+			width: 100%;
+			line-height: 30px;
+			margin-bottom: 6%;
+		}
+		.inputs {
+			position:relative;
+			.input {
+				p {
+					color:@text-white;
+					background-color: @form-bg;
+					font-size: 1.2rem;
+					position: absolute;
+					display: inline-block;
+					left:50%;
+					transform:translateX(-50%) translateY(-55%);
+					padding:0 3%;
+				}
+				input,textarea {
+					background-color: @input-bg;
+					border:1.5px solid @input-border;		
+					width: 100%;
+					border-radius:8px;
+					line-height: 2rem;
+					margin-bottom: 10%;
+				}
+			}
+		}
+	}
+
+	.card {
+		background-color:rgba(0,0,0,0);
+		border:none;
+	}
+
+
+	/* Text */
+	.subTitle-10 {
+		font-size: 1rem;
+	}
+
+	.subTitle-18 {
+		font-size: 1.5rem;
+	}
+
+	.title-30-bold {
+		font-size: 2.5rem;
+		font-weight: bold;
+	}
+
+	.title-32-bold-ttu {
+		font-size: 2.6rem;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.title-18-bold {
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+
+	.subTitle-20-bold-ttu {
+		font-size: 1.6rem;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.subTitle-14-bold {
+		font-size: 1.1rem;
+		font-weight: bold;
+	}
+
+	.subTitle-14 {
+		font-size: 1.1rem;
+	}
+
+	.button-14-bold-ttu {
+		font-size: 1.1rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-decoration: none;
+		color:@text-white;
+		text-align: center;
+		justify-content: center;
+	}
+
+	h1 {
+		margin-bottom: 4%;
+	}
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/* main */
+	main {
+		min-height:100vh;
+		height:100%;
+		color:@text-black;
+		margin-bottom: 5%;
+
+		background-color: #606060;
+		background-image: url(../img/main/background.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-blend-mode: multiply;
+		background-position: 100% 40%;
+		width: 100%;	height:100%;
+
+		.navbar {
+			margin-bottom: 5%;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.main_text {
+			color:@text-black;
+			.container-green {
+				color:@text-white;
+				font-size: 2rem;
+				width: 50%;
+				background-color: @icons;
+				padding: 3% 4%;
+			}
+		}
+
+		.subTitle-10 {
+			text-align: center;
+			color:@text-white;
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.adventures {
+		color:@text-black;
+		.adventuresTitle {
+			.title-30-bold;
+			text-align: center;
+			margin-bottom: 5%;
+		}
+		.adventure {
+			text-align: center;
+			position: relative;
+			img {
+				text-align: center;
+				width: 10vh;
+				height:10vh;
+				filter: invert(32%) sepia(96%) saturate(1405%) hue-rotate(91deg) brightness(105%) contrast(102%);
+				margin-bottom: 4%;
+			}
+			h2 {
+				.title-18-bold;
+				margin-bottom: 3%;
+			}
+		}
+		.slick-slide {
+			img {
+				display: inline-block !important;
+			}
+		}
+		.arrow {
+			top:50%;
+			transform:translateY(-50%);
+			position: absolute;
+			z-index: 99;
+			width: 2rem;
+			height:2rem;
+			border:none;
+		}
+		.prev {
+			background:url(../img/adventures/arrow_left.svg) center no-repeat;
+			background-size: 100%;   
+			left:0%;
+		}
+		.next {
+			background:url(../img/adventures/arrow_right.svg) center no-repeat;
+			background-size: 100%;
+			right:0%;
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.prices {
+		background-color:@background-green;
+		padding: 5% 0%;
+		.buttonCalculate {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.cards {
+			color:@text-black;
+			display: grid;
+			grid-gap: 2rem;
+			grid-template-columns: repeat(auto-fill, minmax(31%, 1fr));
+			.card {
+				padding: 5% 10%;
+				background-color: @card-bg;
+				border:none;
+				table {
+					margin-bottom: 5%;
+				}
+				td,p {
+					text-align: center;
+				}
+				ul, {
+					min-height:25%;
+					margin-bottom: auto;
+					padding-left: 0;
+					list-style: none;
+				}
+				li {
+					text-align: center;
+				}
+				img {
+					width:100%;
+					margin-bottom: 5%;
+				}
+				.button {
+					width:50%;
+					margin:auto;
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.feedback {
+		background-image: url(../img/feedback/background.jpeg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-blend-mode: multiply;
+		background-position: 100% 40%;
+		width: 100%;	height:100%;
+		.title-30-bold {
+			padding-top: 4%;
+			margin-bottom: 2%;
+		}
+		.slick-slide {
+			img {
+				display: inline-block !important;
+			}
+		}
+
+		.arrow {
+			top:50%;
+			transform:translateY(-50%);
+			position: absolute;
+			z-index: 99;
+			width: 3rem;
+			height:3rem;
+			border:none;
+		}
+		.prev {
+			background:url(../img/feedback/arrow_left.svg) center no-repeat;
+			background-size: 100%;   
+			left:0%;
+		}
+		.next {
+			background:url(../img/feedback/arrow_right.svg) center no-repeat;
+			background-size: 100%;
+			right:0%;
+		}
+
+		.feedback_content {
+			margin-bottom:4rem;
+			.feeedback_text {
+				margin-left: 5%;
+				.feedback_description {
+					p {
+						margin: 0;
+						margin-left: 3%;
+						padding: 0;
+					}
+				}
+				img {
+					float: left;
+					width:20%;
+				}
+				.feedback_comment {
+					padding-top: 3%;
+					.subTitle-14-bold{
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.leave_contact_data {
+		color:@text-black;
+		position:relative;
+		.form {
+			padding: 0;
+
+			.inputs {
+				display: flex;
+				justify-content: center;
+
+				.input {
+					width: 35vh;
+					display: flex;
+					flex-direction:column;
+				}
+				display: flex;
+				gap:5%;
+			}
+		}
+		.button {
+			display: block;
+			text-align: center;
+			margin: auto;
+
+		}
+		.leaveContactDataHand {
+			position:absolute;
+			left:0;
+			top:0;
+			width: 20%;
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.work_steps {
+
+		.cards {
+			display: grid;
+			grid-gap: 2rem;
+			grid-template-columns: repeat(auto-fill, minmax(31%, 1fr));
+			.card {
+				background-color: @background;
+				border:none;
+				svg,img {
+					filter: brightness(0) saturate(100%);
+					width: 35%;
+					height:35%;
+				}
+
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.all_inclusive {
+		.all_inclusive_title {
+			margin-bottom: 5%;
+		}
+		.cards {
+			display: grid;
+			grid-gap: 2rem;
+			grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
+			.card {
+				background-color: @background;
+				border:none;
+				svg,img {
+					filter: invert(23%) sepia(89%) saturate(4230%) hue-rotate(351deg) brightness(102%) contrast(141%);
+					width:15vh;
+				}
+			}
+		}
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.no_problems {
+		position: relative;
+		.noProblemsWorker {
+			width:50%;
+			position: absolute;
+			left:35%;
+			bottom:0%;
+			z-index: 3;
+		}
+		.card {
+			background-color: #878787;
+			h2 {
+				margin-bottom: 8%;
+			}
+			li {
+				margin-bottom: 50px;
+			}
+		}
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	.materials {
+		.cards {
+			display: grid;
+			grid-gap: 2rem;
+			grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
+			.card {
+				background-color: #202020;
+				border:none;
+				img {
+					display: flex;
+					justify-content: center;
+					margin: auto;
+					width:100%;
+					max-width:40vh;
+				}
+				h2,p {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.look_how_we_work {
+		.title-32-bold-ttu {
+			color:@text-black;
+			margin-bottom: 15%
+		}
+		.formTitle {
+			span {
+				text-transform: uppercase;
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.additional_services {
+		background-color:@background-green;
+		padding: 5% 0%;
+		.cards {
+			display: grid;
+			grid-gap: 2rem;
+			grid-template-columns: repeat(auto-fill, minmax(31%, 1fr));
+			.card {
+				padding: 10%;
+				text-align: center;
+				img {
+					margin:auto;
+					width:100%;
+					margin-bottom: 5%;
+				}
+				.title-18-bold {
+					margin-bottom: 6%;
+				}
+				.button {
+					width:50%;
+					margin:auto;
+				}
+			}
+		}
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	.contacts {
+		margin-bottom:0;
+		.container {
+			position: relative;
+		}
+		.map {
+			width: 100%;
+			height:300px;
+		}
+		.phone, .email {
+			margin-bottom: 10%;
+		}
+		form {
+			position: absolute;
+			margin: 0;
+			padding: 3%;
+			top:50%;
+			transform:translateY(-50%);
+			z-index:2
+		}
+		.trough {
+			position:absolute;
+			width:30%;
+			bottom:4%;
+			right:18%;
+			z-index:1;
+		}
+		.cellar {
+			position:relative;
+			background-color: @background;
+			z-index:3;
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.pop-up_consultation{
+		display: none;
+		position: fixed;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0,0,0,0.2);
+	}
+
+	.pop-up_consultation_content {
+		margin: 3% auto 3%;
+		width: 30%;
+		height:60%;
+		border-radius: 16px;
+	}
+
+	.pop-up_consultation_body {
+		padding: 10px 20px;
+		.subTitle-10 {
+			text-align: center;
+		}
+	}
+
+	.popUpConsultationClose {
+		color: white;
+		float: right;
+		margin-right:1rem;
+		font-size: 30px;
+	}
+
+	.popUpConsultationClose:hover,
+	.popUpConsultationClose:focus {  
+		color: black;
+		cursor: pointer;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	@media (max-width: 991px) {
+		.main_text {
+			.container-green {
+				color:@text-white;
+				font-size: 1.7rem;
+				width: 50%;
+				background-color: @icons;
+				padding: 2% 3%;
+				margin-bottom: 5%;
+			}
+		}
+	}
+
+	@media (max-width: 766px) {
+		main img {
+			z-index: 0;
+
+		}
+	}

@@ -1,0 +1,275 @@
+// comment for me
+// div - specific_name (main_title/about_Egor)
+// object - specificName (buttonAboutMe/linkNavigation)
+// bootstrap - specific-name (bg-dark)
+
+
+@font-face {
+	font-family: 'Neris';
+	src: url('../fonts/Neris-Thin.eot');
+	src: url('../fonts/Neris-Thin.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Neris-Thin.woff2') format('woff2'),
+	url('../fonts/Neris-Thin.woff') format('woff'),
+	url('../fonts/Neris-Thin.ttf') format('truetype'),
+	url('../fonts/Neris-Thin.svg#Neris-Thin') format('svg');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+
+/*Colors*/
+@background-color:#202020;
+@button-color:#fcb303;
+@icons-color:#46b814;
+@text-color-main:black;
+@text-color-background:white;
+
+
+/* Text */
+
+.subTitle-18 {
+	font-size:18px;
+	display: flex;
+	justify-content: center;
+}
+.title-30 {
+	font-size:30px;
+	display:flex;
+	justify-content:center;
+}
+.big-32-bold {
+	font-size:32px;
+	font-weight: 800;
+}
+.title-18-bold {
+	font-size: 18px;
+	font-weight: 800;
+}
+.button-14-bold-ttu {
+	font-size: 14px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+/*Basic settings*/
+
+body {
+	background-color: @background-color;
+	color:@text-color-main;
+}
+
+/* clsss of all buttons */
+
+.button {
+	border-radius:6px;
+	text-decoration: none;
+	background-color:@button-color;
+	color:@text-color-background;
+	display:flex;
+	text-align:center;
+	justify-content:center;
+}
+
+
+
+
+
+.header {
+	background-color: #606060;
+	background-image:url(../img/header.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
+	width: 100%; height:500px;
+	background-position: 100% 30%;
+}
+
+
+
+
+
+/* navbar */
+
+.navbarImage {
+	margin-top: 20px;
+	width:307px;
+	height:80px;
+}
+
+.navbarPhone {
+	margin-bottom: 0px;
+	font-weight:700;
+	font-size: 18px;
+}
+
+.navbarButton {
+	padding:10px 5px;
+}
+
+
+
+
+
+/* header text*/
+
+.mainTitle {
+	margin-top: 30px;
+	font-weight: 700;
+	font-size:36px;
+}
+
+.subTitle {
+	margin-top: 20px;
+	font-weight:600;
+}
+
+.price {
+	background-color: @icons-color;
+	color:@text-color-background;
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 20px;
+}
+
+.oplata {
+	font-size: 20px;
+	font-weight: 900;
+}
+
+
+
+
+
+/*header form*/
+
+.form {
+	background-color: rgb(33, 37, 41);
+	padding:20px 20px;
+	position:relative;
+	input {
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}	
+	.formTitle {
+		display:inherit;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	.formName {
+		position: absolute;
+		background-color: rgb(33, 37, 41);
+		left:36%;
+		top:24%;
+		padding: 0 0.5rem;
+	}
+	.formPhone {
+		position: absolute;
+		background-color:rgb(33, 37, 41);
+		left:7.5rem;
+		top:9rem;
+		padding: 0 0.5rem;
+	}
+	.buttonPriceSize {
+		margin-top: 20px;
+		padding:6% 0;
+	}
+	.formSmall {
+		display: inline-block;
+		justify-content: center;
+		text-align: center;
+		padding-top: 10px;
+	}
+}
+
+
+
+
+
+.features {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	margin-bottom: 200px;
+	h2 {
+		display: flex;
+		justify-content: center;
+		margin:60px auto;
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+		margin-bottom:10px;
+		width:50px;
+		height:50px;
+		filter: invert(69%) sepia(39%) saturate(6215%) hue-rotate(64deg) brightness(99%) contrast(84%);
+		position:relative;
+	}
+	p {
+		.title-18-bold;
+	}
+	small {
+		display:flex;
+	}
+}
+
+
+
+
+
+
+/* prices */
+
+.prices {
+	background-color:#2d780d;
+	h2 {
+		color:white;
+	}
+	h5 {
+		font-size: 18px;
+	}
+	small {
+		color:white;
+		display: flex;
+		justify-content: center;
+		padding-top: 20px;
+	}
+	.buttonPriceCalculate {
+		padding:15px 0px;
+		margin-left:80px;
+		margin-top: 60px;
+		text-transform: uppercase;
+		font-weight: 800;
+		font-size: 14px;
+	}
+}
+
+
+
+
+.leaveContactData {
+	position:relative;
+	img {
+		position:absolute;
+		width: 300px;
+		left:0%;
+		top:10%;
+	}
+	.buttonSubmit {
+		padding:10px 20px;
+	}
+}
+
+
+
+
+
+.howWeWork {
+	img {
+		width: 100px;
+	}
+	p {
+		margin-bottom:0rem;
+	}
+}

@@ -1,0 +1,87 @@
+In .html <header> - order is important
+
+	<!-- Slider -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+or download and paste in package slick https://github.com/kenwheeler/slick/archive/v1.8.1.zip
+
+<!-- Slider -->
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+Slider in .html
+	
+	<div class="slider">
+		<img src="https://s.fotorama.io/1.jpg">
+		<img src="https://s.fotorama.io/2.jpg">
+		<img src="https://s.fotorama.io/3.jpg">
+		<img src="https://s.fotorama.io/4.jpg">
+		<img src="https://s.fotorama.io/5.jpg">
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+In .js file or in html (in the end for example)
+
+<script type="text/javascript">
+		jQuery(document).ready(function($){
+			jQuery('.slider').slick({
+				
+				infinite: true,
+				slidesToShow: 2,
+				slidesToScroll: 1
+
+			});
+		});
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+Make sure that
+
+1.
+jQuery('.slider').slick({
+and
+<div class="slider">
+have the same class name
+
+
+2.you haven't display:block or justify-content:center
