@@ -6,15 +6,14 @@ rem - html fz10 (1rem=10) - html fz16 (1rem = 16) - it needs to make the same as
 cause in figma can be fz10 and you write fz10 but it looks smaller so to fix that you use rem
 29.02.2023 - 09.03.2023
 */
-/* For another developer
-	gap between new section 20 lines
-	*/
+/* 
+For another developer
+gap between new section 20 lines
+*/
 /* Global settings */
 body {
   background-color: #202020;
-  color: white;
-  min-height: 100%;
-  height: 100%;
+  color: #ffffff;
 }
 html {
   font-size: 12px;
@@ -23,6 +22,10 @@ html {
 /* Custom buttons inputs forms etc*/
 section {
   margin-bottom: 5%;
+}
+a:hover {
+  text-decoration: none;
+  color: #ffffff;
 }
 .button {
   background-color: #fcb303;
@@ -38,9 +41,6 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-.button a:hover {
-  color: #ffffff;
 }
 .form {
   background-color: #202020;
@@ -72,9 +72,6 @@ section {
   width: 100%;
   line-height: 30px;
   margin-bottom: 6%;
-}
-.form .formButton a:hover {
-  color: #ffffff;
 }
 .form .inputs {
   position: relative;
@@ -153,6 +150,7 @@ h1 {
 main {
   min-height: 100vh;
   color: #000000;
+  padding-bottom: 5%;
   margin-bottom: 5%;
   background-color: #606060;
   background-image: url(../img/main/background.jpg);
@@ -167,7 +165,7 @@ main .navbar {
   margin-bottom: 5%;
 }
 main .navbar img {
-  width: 100%;
+  width: 80%;
 }
 main .main_text {
   color: #000000;
@@ -182,6 +180,7 @@ main .main_text .container-green {
 main .subTitle-10 {
   text-align: center;
   color: #ffffff;
+  margin-bottom: auto;
 }
 .adventures {
   color: #000000;
@@ -548,6 +547,16 @@ main .subTitle-10 {
 .popUpConsultationClose:focus {
   color: black;
   cursor: pointer;
+}
+@media (min-width: 1921px) and (max-width: 2560px) {
+  .main_text {
+    display: none;
+  }
+}
+@media (max-width: 766px) {
+  main img {
+    z-index: 0;
+  }
 }
 @media (max-width: 991px) {
   .main_text .container-green {
